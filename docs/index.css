@@ -9,7 +9,7 @@ body, html {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/TNI Cybersec Cover.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/TNI Cybersec Cover.jpg");
     height: 100vh;
     min-height: 500px;
     background-position: center;
