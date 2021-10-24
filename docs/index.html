@@ -91,7 +91,7 @@
         $('#slideshow h1:gt(0)').hide();
         setInterval(function () {
           $('#slideshow :first-child').fadeOut(800)
-            .next('h1').fadeIn(800)
+            .next('p').fadeIn(800)
             .end().appendTo('#slideshow');
         },
           4000);
