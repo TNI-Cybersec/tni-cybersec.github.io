@@ -1,3 +1,3 @@
 # tni-cybersec.github.io
 
-Welcome to TNI Cybersec's GitHub Page!
+Welcome to TNI Cybersec's GitHub Pages!
