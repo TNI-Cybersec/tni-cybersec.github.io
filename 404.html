@@ -137,51 +137,6 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript">
-      var loader;
-
-      function loadNow(opacity) {
-        if (opacity <= 0) {
-          displayContent();
-        } else {
-          loader.style.opacity = opacity;
-          window.setTimeout(function () {
-            loadNow(opacity - 0.05);
-          }, 50);
-        }
-      }
-
-      function displayContent() {
-        loader.style.display = "none";
-        document.getElementById("content").style.display = "block";
-      }
-
-      document.addEventListener("DOMContentLoaded", function () {
-        loader = document.getElementById("loader");
-        loadNow(1);
-      });
-
-      // nav animation
-
-      TweenMax.from("#brand", 1, {
-        delay: 0.4,
-        y: 10,
-        opacity: 0,
-        ease: Expo.easeInOut,
-      });
-
-      TweenMax.staggerFrom(
-        "#menu li a",
-        1,
-        {
-          delay: 0.4,
-          opacity: 0,
-          ease: Expo.easeInOut,
-        },
-        0.1
-      );
-
-      // nav animation ends
-
       new WOW().init();
     </script>
   </body>
