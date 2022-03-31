@@ -363,7 +363,7 @@ h5.footer {
   }
 
 .bgimg {
-      background-image: url("pic/Head.png");
+      background-image: url("img/Head.png");
       background-position: center;
       background-size: cover;
       min-height: 100%;
@@ -881,21 +881,21 @@ h6 {
 }
 
 .type {
-      background: url(pic/cybersec.jpg) no-repeat 50% 50%;
+      background: url(img/cybersec.jpg) no-repeat 50% 50%;
       background-size: cover;
 }
 
 
 
 .type2 {
-      background: url(pic/activity.jpg) no-repeat 50% 50%;
+      background: url(img/activity.jpg) no-repeat 50% 50%;
       background-size: cover;
 }
 
 
 
 .type3 {
-      background: url(pic/aboutme.png) no-repeat 50% 50% ;
+      background: url(img/aboutme.png) no-repeat 50% 50% ;
       background-size: cover;
 }
 
