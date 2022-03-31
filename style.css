@@ -58,6 +58,7 @@ body {
     violet
   );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: move 10s linear infinite;
 }
@@ -79,6 +80,7 @@ body {
     violet
   );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: move 10s linear infinite;
 }
