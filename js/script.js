@@ -3,6 +3,7 @@ $(document).ready(function () {
   $("#navigation").load("common/navbar.html");
   $("#footer").load("common/footer.html");
   $("#cookie-banner").load("common/cookie-banner.html");
+  $("#msg-plugin").load("common/messenger-plugin.html");
 });
 
 // Loader starts
