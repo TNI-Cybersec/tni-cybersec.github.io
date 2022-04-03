@@ -31,7 +31,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
       crossorigin="anonymous"
     ></script>
@@ -69,8 +69,37 @@
   </head>
 
   <body>
-    <!-- messenger plugin -->
-    <div id="msg-plugin"></div>
+    <!-- Messenger ปลั๊กอินแชท Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your ปลั๊กอินแชท code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "202287595164031");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v13.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/th_TH/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
 
     <div id="loader"></div>
     <div class="wrapper">
@@ -99,7 +128,7 @@
       <br />
 
       <h6 class="wow fadeInUp" data-wow-delay="0.2s">
-        わたしはだれ？<i class="fas fa-user-ninja"></i>
+      <i class="fas fa-user-ninja"></i> わたしはだれ？
       </h6>
 
       <div class="vertical wow fadeInUp"></div>
@@ -180,9 +209,115 @@
 
     <br />
 
-    <div id="cookie-banner"></div>
+    <div class="cookie-container">
+      <br />
+      <h3><i class="fas fa-cookie-bite"></i> We use cookies.</h3>
+      <p>
+        เราใช้คุกกี้ในเว็บไซต์นี้เพื่อให้คุณได้รับประสบการณ์ที่ดีที่สุดในการให้บริการนี้
+        โปรดอ่านข้อมูลเพิ่มเติมได้ที่ <i class="fas fa-arrow-circle-down"></i>
+      </p>
+      <button
+        type="button"
+        onclick="location.href='termsofservice.html'"
+        class="btn btn-outline-dark btn-block"
+      >
+        <i class="fas fa-info-circle"></i> Terms of service
+      </button>
+      <button
+        type="button"
+        class="cookie-btn btn btn-outline-dark btn-warning btn-lg btn-block"
+      >
+        <i class="fas fa-check-circle"></i> ยอมรับ
+      </button>
+      <br />
+    </div>
 
-    <!-- javascript -->
+    <div
+      id="social"
+      class="modal fade"
+      role="dialog"
+      data-backdrop="static"
+      data-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content ripple1">
+          <div class="modal-header">
+            <h4 class="modal-title rainbowText">
+              <i class="fas fa-handshake"></i> Join us!
+            </h4>
+          </div>
+          <div class="modal-body">
+            <button
+              type="button"
+              onclick="location.href='https://m.me/TNICybersec'"
+              class="btn btn-outline-dark btn-lg btn-block"
+            >
+              <i class="fab fa-facebook-messenger"></i> TNI Cybersec
+            </button>
+            </br>
+            <button
+              type="button"
+              onclick="location.href='https://fb.me/TNICybersec'"
+              class="btn btn-outline-dark btn-lg btn-block"
+            >
+              <i class="fab fa-facebook"></i> TNI Cybersec
+            </button>
+            </br>
+            <button
+              type="button"
+              onclick="location.href='https://discord.gg/ETMkrHSGZG'"
+              class="btn btn-outline-dark btn-lg btn-block"
+            >
+              <i class="fab fa-discord"></i> TNI Cybersec
+            </button>
+
+
+            <hr>
+            <h4 class="tooltip-contact">
+                  <i class="fa-solid fa-envelope"></i> Email
+            </h4>
+            <a>
+                  <i class="fa-solid fa-envelope"> </i> pranisa@tni.ac.th
+            </a>
+            </br>
+
+            <button
+              type="button"
+              onclick="location.href='mailto: pranisa@tni.ac.th'"
+              class="btn btn-outline-dark btn-lg btn-block"
+            >
+              <i class="fa-solid fa-envelope"></i> pranisa@tni.ac.th
+            </button>  
+            
+            <a>
+             <i class="fa-solid fa-envelope"> </i> tniinfo@tni.ac.th
+            </a>
+            </br>
+
+            <button
+              type="button"
+              onclick="location.href='mailto: tniinfo@tni.ac.th'"
+              class="btn btn-outline-dark btn-lg btn-block"
+            >
+              <i class="fa-solid fa-envelope"></i> tniinfo@tni.ac.th
+            </button>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-light btn-danger btn-lg btn-block fadeInUp"
+              data-toggle="modal"
+              data-dismiss="modal"
+            >
+              <i class="far fa-times-circle"></i> Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/cookie.js"></script>
     <script src="js/script.js"></script>
 
     <!-- greensock cdn -->
@@ -190,6 +325,51 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript">
+      var loader;
+
+      function loadNow(opacity) {
+        if (opacity <= 0) {
+          displayContent();
+        } else {
+          loader.style.opacity = opacity;
+          window.setTimeout(function () {
+            loadNow(opacity - 0.05);
+          }, 50);
+        }
+      }
+
+      function displayContent() {
+        loader.style.display = "none";
+        document.getElementById("content").style.display = "block";
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        loader = document.getElementById("loader");
+        loadNow(1);
+      });
+
+      // nav animation
+
+      TweenMax.from("#brand", 1, {
+        delay: 0.4,
+        y: 10,
+        opacity: 0,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.staggerFrom(
+        "#menu li a",
+        1,
+        {
+          delay: 0.4,
+          opacity: 0,
+          ease: Expo.easeInOut,
+        },
+        0.1
+      );
+
+      // nav animation ends
+
       new WOW().init();
     </script>
   </body>
