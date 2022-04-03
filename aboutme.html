@@ -70,37 +70,8 @@
 
   <body>
     <!-- Messenger ปลั๊กอินแชท Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your ปลั๊กอินแชท code -->
-    <div id="fb-customer-chat" class="fb-customerchat"></div>
-
-    <script>
-      var chatbox = document.getElementById("fb-customer-chat");
-      chatbox.setAttribute("page_id", "202287595164031");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          xfbml: true,
-          version: "v13.0",
-        });
-      };
-
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/th_TH/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
-
+    <div id="msg-plugin"></div>
+    
     <div id="loader"></div>
     <div class="wrapper">
       <!--------------- navbar starts here --------------->
@@ -124,7 +95,7 @@
               </h3>
               <p class="wow fadeInUp" data-wow-delay="0.5s">
                 เป็นชมรมทางด้าน cyber security ที่ร่วมมือกันหลายองค์กรโดย
-                Thai-Nichi Institute of Technology เป็นแกนนำหลัก
+                Thai-Nichi Institute of Technology (TNI) เป็นแกนนำหลัก
               </p>
               <img
                 rel="preload"
@@ -186,7 +157,7 @@
               </p>
               <button
                 type="button"
-                onclick="location.href='https://github.com/TNI-Cybersec/tni-cybersec.github.io'"
+                onclick="window.open('https://github.com/TNI-Cybersec/tni-cybersec.github.io')"
                 class="btn btn-outline-light btn-lg btn-block btn-lg wow fadeInUp"
                 data-wow-delay="0.5s"
               >
@@ -205,117 +176,7 @@
     <div id="footer"></div>
     <!--------------- footer ends here --------------->
 
-    <br />
-
-    <div class="cookie-container">
-      <br />
-      <h3><i class="fas fa-cookie-bite"></i> We use cookies.</h3>
-      <p>
-        เราใช้คุกกี้ในเว็บไซต์นี้เพื่อให้คุณได้รับประสบการณ์ที่ดีที่สุดในการให้บริการนี้
-        โปรดอ่านข้อมูลเพิ่มเติมได้ที่ <i class="fas fa-arrow-circle-down"></i>
-      </p>
-      <button
-        type="button"
-        onclick="location.href='termsofservice.html'"
-        class="btn btn-outline-dark btn-block"
-      >
-        <i class="fas fa-info-circle"></i> Terms of service
-      </button>
-      <button
-        type="button"
-        class="cookie-btn btn btn-outline-dark btn-warning btn-lg btn-block"
-      >
-        <i class="fas fa-check-circle"></i> ยอมรับ
-      </button>
-      <br />
-    </div>
-
-    <div
-      id="social"
-      class="modal fade"
-      role="dialog"
-      data-backdrop="static"
-      data-keyboard="false"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content ripple1">
-          <div class="modal-header">
-            <h4 class="modal-title rainbowText">
-              <i class="fas fa-handshake"></i> Join us!
-            </h4>
-          </div>
-          <div class="modal-body">
-            <button
-              type="button"
-              onclick="location.href='https://m.me/TNICybersec'"
-              class="btn btn-outline-dark btn-lg btn-block"
-            >
-              <i class="fab fa-facebook-messenger"></i> TNI Cybersec
-            </button>
-            </br>
-            <button
-              type="button"
-              onclick="location.href='https://fb.me/TNICybersec'"
-              class="btn btn-outline-dark btn-lg btn-block"
-            >
-              <i class="fab fa-facebook"></i> TNI Cybersec
-            </button>
-            </br>
-            <button
-              type="button"
-              onclick="location.href='https://discord.gg/ETMkrHSGZG'"
-              class="btn btn-outline-dark btn-lg btn-block"
-            >
-              <i class="fab fa-discord"></i> TNI Cybersec
-            </button>
-
-
-            <hr>
-            <h4 class="tooltip-contact">
-                  <i class="fa-solid fa-envelope"></i> Email
-            </h4>
-            <a>
-                  <i class="fa-solid fa-envelope"> </i> pranisa@tni.ac.th
-            </a>
-            </br>
-
-            <button
-              type="button"
-              onclick="location.href='mailto: pranisa@tni.ac.th'"
-              class="btn btn-outline-dark btn-lg btn-block"
-            >
-              <i class="fa-solid fa-envelope"></i> pranisa@tni.ac.th
-            </button>  
-            
-            <a>
-             <i class="fa-solid fa-envelope"> </i> tniinfo@tni.ac.th
-            </a>
-            </br>
-
-            <button
-              type="button"
-              onclick="location.href='mailto: tniinfo@tni.ac.th'"
-              class="btn btn-outline-dark btn-lg btn-block"
-            >
-              <i class="fa-solid fa-envelope"></i> tniinfo@tni.ac.th
-            </button>
-          </div>
-
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-outline-light btn-danger btn-lg btn-block fadeInUp"
-              data-toggle="modal"
-              data-dismiss="modal"
-            >
-              <i class="far fa-times-circle"></i> Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script src="js/cookie.js"></script>
+    <div id="cookie-banner"></div>
     <script src="js/script.js"></script>
 
     <!-- greensock cdn -->
