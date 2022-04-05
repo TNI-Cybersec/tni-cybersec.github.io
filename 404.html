@@ -64,7 +64,12 @@
   <body>
     <!-- loader -->
     <div id="loader"></div>
-    
+
+    <audio loop id="bgm">
+      <source src="audio/NeverGonnaGiveYouUp.mp3" type="audio/mpeg" />
+      <!-- Your browser does not support the audio element. -->
+    </audio>
+
     <div class="wrapper">
       <!--------------- navbar starts here --------------->
       <nav>
@@ -92,11 +97,6 @@
             <h1 class="wow fadeInUp" data-wow-delay="0.1s">
               404 Page not found
             </h1>
-            <h1 class="wow fadeInUp" data-wow-delay="0.2s">
-              <audio autoplay controls loop>
-                <source src="NeverGonnaGiveYouUp.mp3" type="audio/mpeg" />
-              </audio>
-            </h1>
             <h6 class="wow fadeInUp" data-wow-delay="0.3s">🎵🎵🎵</h6>
             <h6 class="wow fadeInUp" data-wow-delay="0.4s">
               Never gonna give you up
@@ -108,6 +108,7 @@
               Never gonna run around and desert you
             </h6>
             <h6 class="wow fadeInUp" data-wow-delay="0.7s">🎵🎵🎵</h6>
+            <!-- <button onclick="playAudio()">play</button> -->
           </div>
         </div>
       </div>
@@ -121,6 +122,17 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript">
+      // Click anywhere to play the audio
+      document.addEventListener(
+        "click",
+        function () {
+          audio = document.getElementById("bgm");
+          audio.volume = 0.5;
+          audio.play();
+        },
+        { once: true }
+      );
+
       new WOW().init();
     </script>
   </body>
