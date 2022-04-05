@@ -81,7 +81,7 @@
   <body>
     <!-- Messenger ปลั๊กอินแชท Code -->
     <div id="msg-plugin"></div>
-    
+
     <div id="loader"></div>
     <div class="wrapper">
       <!--------------- navbar starts here --------------->
@@ -284,323 +284,285 @@
         <div id="footer"></div>
         <!--------------- footer ends here --------------->
 
-        <br/>
+        <br />
         <div id="cookie-banner"></div>
 
-      <div
-        rel="preload"
-        as="script"
-        id="ioTable"
-        class="modal fade"
-        role="dialog"
-        data-backdrop="static"
-        data-keyboard="false"
-      >
-        <div class="modal-dialog modal2 modal-lg modal-dialog-centered">
-          <div class="modal-content glass">
-            <div class="modal-header">
-              <h4 class="modal-title">
-                <i class="fas fa-list-ul"></i> Activities List
-              </h4>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <i class="far fa-times-circle"></i>
-              </button>
-            </div>
-            <div class="modal-body modal2">
-              <div>
-                <input
-                  class="form-control"
-                  id="ioInput"
-                  type="text"
-                  placeholder="🔍Search ชื่อ Activities ของเราที่นี่!"
-                />
-                <p>
-                  <span class="badge badge-dark">'Status'</span>
-                  คือสถานะกิจกรรมของเรา ณ ขณะนี้มี
-                  <span class="badge badge-success">'รับสมัคร'</span>
-                  กำลังเปิดรับสมัคร
-                  <span class="badge badge-warning">'ฝึกหรืออบรม'</span>
-                  กำลังฝึกหรืออบรม(สามารถเข้าร่วมได้อยู่)
-                  <span class="badge badge-danger">'ผ่านไปแล้ว'</span>
-                  กิจกรรมผ่านไปแล้ว
-                  <span class="badge badge-danger">'ยกเลิก'</span> ยกเลิกกิจกรรม
-                </p>
-                <div
-                  class="border table table-striped table-responsive table-wrapper-scroll-x my-custom-scrollbar"
-                  id="io_table"
-                >
-                  <div id="io_table"></div>
-                </div>
-              </div>
-              <div class="modal-footer">
+        <div
+          rel="preload"
+          as="script"
+          id="ioTable"
+          class="modal fade"
+          role="dialog"
+          data-backdrop="static"
+          data-keyboard="false"
+        >
+          <div class="modal-dialog modal2 modal-lg modal-dialog-centered">
+            <div class="modal-content glass">
+              <div class="modal-header">
+                <h4 class="modal-title">
+                  <i class="fas fa-list-ul"></i> Activities List
+                </h4>
                 <button
                   type="button"
-                  data-toggle="modal"
+                  class="close"
                   data-dismiss="modal"
-                  data-target="#social"
-                  class="btn btn-outline-dark btn-block btn-lg"
+                  aria-label="Close"
                 >
-                  <i class="fas fa-user-check"></i> ลงชื่อเข้าร่วมกิจกรรม
+                  <i class="far fa-times-circle"></i>
                 </button>
-                <p>
-                  <i class="fas fa-arrow-circle-up"></i> ถ้าคุณ
-                  <span class="badge badge-warning"
-                    >! ต้องการเข้าร่วมกิจกรรม !</span
+              </div>
+              <div class="modal-body modal2">
+                <div>
+                  <input
+                    class="form-control"
+                    id="ioInput"
+                    type="text"
+                    placeholder="🔍Search ชื่อ Activities ของเราที่นี่!"
+                  />
+                  <p>
+                    <span class="badge badge-dark">'Status'</span>
+                    คือสถานะกิจกรรมของเรา ณ ขณะนี้มี
+                    <span class="badge badge-success">'รับสมัคร'</span>
+                    กำลังเปิดรับสมัคร
+                    <span class="badge badge-warning">'ฝึกหรืออบรม'</span>
+                    กำลังฝึกหรืออบรม(สามารถเข้าร่วมได้อยู่)
+                    <span class="badge badge-danger">'ผ่านไปแล้ว'</span>
+                    กิจกรรมผ่านไปแล้ว
+                    <span class="badge badge-danger">'ยกเลิก'</span>
+                    ยกเลิกกิจกรรม
+                  </p>
+                  <div
+                    class="border table table-striped table-responsive table-wrapper-scroll-x my-custom-scrollbar"
+                    id="io_table"
                   >
-                  ท่านสามารถ
-                  <span class="badge badge-success"
-                    ><i class="fas fa-user-check"></i>
-                    ลงชื่อเข้าร่วมกิจกรรม</span
+                    <div id="io_table"></div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    data-toggle="modal"
+                    data-dismiss="modal"
+                    data-target="#social"
+                    class="btn btn-outline-dark btn-block btn-lg"
                   >
-                  ได้ที่ปุ่มด้านบนนี้ได้เลย
-                </p>
-                <p>
-                  <span class="badge badge-warning"
-                    ><i class="far fa-bell ripple2"></i> Lasted Update
-                  </span>
-                  <i class="fas fa-calendar-day"></i> <span id="time2"></span>
-                  <i class="fas fa-hourglass-half"> </i>
-                  <span id="dataSeq2"></span>
-                </p>
+                    <i class="fas fa-user-check"></i> ลงชื่อเข้าร่วมกิจกรรม
+                  </button>
+                  <p>
+                    <i class="fas fa-arrow-circle-up"></i> ถ้าคุณ
+                    <span class="badge badge-warning"
+                      >! ต้องการเข้าร่วมกิจกรรม !</span
+                    >
+                    ท่านสามารถ
+                    <span class="badge badge-success"
+                      ><i class="fas fa-user-check"></i>
+                      ลงชื่อเข้าร่วมกิจกรรม</span
+                    >
+                    ได้ที่ปุ่มด้านบนนี้ได้เลย
+                  </p>
+                  <p>
+                    <span class="badge badge-warning"
+                      ><i class="far fa-bell ripple2"></i> Lasted Update
+                    </span>
+                    <i class="fas fa-calendar-day"></i> <span id="time2"></span>
+                    <i class="fas fa-hourglass-half"> </i>
+                    <span id="dataSeq2"></span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <script src="js/script.js"></script>
 
-        <!-- greensock cdn -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-        <script src="https://d3js.org/d3.v6.min.js"></script>
-        <script type="text/javascript">
-          $(function () {
-            $("#myModal").modal("show");
-            $("#myModal").modal({ backdrop: "static", keyboard: false });
-          });
+          <!-- javascript -->
+          <script src="js/script.js"></script>
 
-          var loader;
+          <!-- greensock cdn -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+          <script src="https://d3js.org/d3.v6.min.js"></script>
+          <script type="text/javascript">
+            $(function () {
+              $("#myModal").modal("show");
+              $("#myModal").modal({ backdrop: "static", keyboard: false });
+            });
 
-          function loadNow(opacity) {
-            if (opacity <= 0) {
-              displayContent();
-            } else {
-              loader.style.opacity = opacity;
-              window.setTimeout(function () {
-                loadNow(opacity - 0.05);
-              }, 50);
-            }
-          }
+            new WOW().init();
 
-          function displayContent() {
-            loader.style.display = "none";
-            document.getElementById("content").style.display = "block";
-          }
+            // Table
 
-          document.addEventListener("DOMContentLoaded", function () {
-            loader = document.getElementById("loader");
-            loadNow(1);
-          });
-          // nav animation
+            $(document).ready(function () {
+              $("#load_data").ready(function () {
+                $.ajax({
+                  url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=0&single=true&output=csv",
+                  dataType: "text",
 
-          TweenMax.from("#brand", 1, {
-            delay: 0.4,
-            y: 10,
-            opacity: 0,
-            ease: Expo.easeInOut,
-          });
+                  success: function (data) {
+                    var io_data = data.split(/\r?\n|\r/);
+                    var table_data =
+                      '<table class="table table-bordered table-striped">';
 
-          TweenMax.staggerFrom(
-            "#menu li a",
-            1,
-            {
-              delay: 0.4,
-              opacity: 0,
-              ease: Expo.easeInOut,
-            },
-            0.1
-          );
+                    for (var count = 0; count < io_data.length; count++) {
+                      var cell_data = io_data[count].split(",");
+                      table_data += "<tr>";
 
-          // nav animation ends
-
-          new WOW().init();
-
-          // Table
-
-          $(document).ready(function () {
-            $("#load_data").ready(function () {
-              $.ajax({
-                url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=0&single=true&output=csv",
-                dataType: "text",
-
-                success: function (data) {
-                  var io_data = data.split(/\r?\n|\r/);
-                  var table_data =
-                    '<table class="table table-bordered table-striped">';
-
-                  for (var count = 0; count < io_data.length; count++) {
-                    var cell_data = io_data[count].split(",");
-                    table_data += "<tr>";
-
-                    for (
-                      var cell_count = 0;
-                      cell_count < cell_data.length;
-                      cell_count++
-                    ) {
-                      if (count === 0) {
-                        table_data += "<th>" + cell_data[cell_count] + "</th>";
-                      } else {
-                        table_data += "<td>" + cell_data[cell_count] + "</td>";
+                      for (
+                        var cell_count = 0;
+                        cell_count < cell_data.length;
+                        cell_count++
+                      ) {
+                        if (count === 0) {
+                          table_data +=
+                            "<th>" + cell_data[cell_count] + "</th>";
+                        } else {
+                          table_data +=
+                            "<td>" + cell_data[cell_count] + "</td>";
+                        }
                       }
+                      table_data += "</tr>";
                     }
-                    table_data += "</tr>";
-                  }
-                  table_data += "</table>";
-                  $("#io_table").html(table_data);
-                },
+                    table_data += "</table>";
+                    $("#io_table").html(table_data);
+                  },
+                });
               });
             });
-          });
 
-          $(document).ready(function () {
-            $("#ioInput").on("keyup", function () {
-              var value = $(this).val().toLowerCase();
-              $("#io_table tr").filter(function () {
-                $(this).toggle(
-                  $(this).text().toLowerCase().indexOf(value) > -1
-                );
+            $(document).ready(function () {
+              $("#ioInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#io_table tr").filter(function () {
+                  $(this).toggle(
+                    $(this).text().toLowerCase().indexOf(value) > -1
+                  );
+                });
               });
             });
-          });
-          // Chart
-          d3.csv(
-            "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=741328053&single=true&output=csv"
-          ).then(makeSum);
-          function makeSum(Sum) {
-            var sum = Sum.map(function (d) {
-              return d.Sum;
-            });
-            sum = sum.slice(0, -2);
-            document.getElementById("sum").innerHTML = sum;
-          }
+            // Chart
+            d3.csv(
+              "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=741328053&single=true&output=csv"
+            ).then(makeSum);
+            function makeSum(Sum) {
+              var sum = Sum.map(function (d) {
+                return d.Sum;
+              });
+              sum = sum.slice(0, -2);
+              document.getElementById("sum").innerHTML = sum;
+            }
 
-          d3.csv(
-            "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=741328053&single=true&output=csv"
-          ).then(makeTime);
-          function makeTime(Time) {
-            var time = Time.map(function (d) {
-              return d.Time;
-            });
-            time = time.slice(0, -2);
-            document.getElementById("time").innerHTML = time;
-            document.getElementById("time2").innerHTML = time;
-          }
+            d3.csv(
+              "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=741328053&single=true&output=csv"
+            ).then(makeTime);
+            function makeTime(Time) {
+              var time = Time.map(function (d) {
+                return d.Time;
+              });
+              time = time.slice(0, -2);
+              document.getElementById("time").innerHTML = time;
+              document.getElementById("time2").innerHTML = time;
+            }
 
-          d3.csv(
-            "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=741328053&single=true&output=csv"
-          ).then(makeDataSeq);
-          function makeDataSeq(DataSeq) {
-            var dataSeq = DataSeq.map(function (d) {
-              return d.DataSeq;
-            });
-            dataSeq = dataSeq.slice(0, -2);
-            document.getElementById("dataSeq").innerHTML = dataSeq;
-            document.getElementById("dataSeq2").innerHTML = dataSeq;
-          }
+            d3.csv(
+              "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=741328053&single=true&output=csv"
+            ).then(makeDataSeq);
+            function makeDataSeq(DataSeq) {
+              var dataSeq = DataSeq.map(function (d) {
+                return d.DataSeq;
+              });
+              dataSeq = dataSeq.slice(0, -2);
+              document.getElementById("dataSeq").innerHTML = dataSeq;
+              document.getElementById("dataSeq2").innerHTML = dataSeq;
+            }
 
-          d3.csv(
-            "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=741328053&single=true&output=csv"
-          ).then(makeip);
-          function makeip(IP) {
-            var ip = IP.map(function (d) {
-              return d.Count;
-            });
-            ip = ip.slice(0, -2);
-            document.getElementById("iput").innerHTML = ip;
-          }
+            d3.csv(
+              "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=741328053&single=true&output=csv"
+            ).then(makeip);
+            function makeip(IP) {
+              var ip = IP.map(function (d) {
+                return d.Count;
+              });
+              ip = ip.slice(0, -2);
+              document.getElementById("iput").innerHTML = ip;
+            }
 
-          d3.csv(
-            "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=741328053&single=true&output=csv"
-          ).then(makemake);
-          function makemake(MAKE) {
-            var make = MAKE.map(function (d) {
-              return d.Count;
-            });
-            make = make.slice(1, -1);
-            document.getElementById("make").innerHTML = make;
-          }
+            d3.csv(
+              "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=741328053&single=true&output=csv"
+            ).then(makemake);
+            function makemake(MAKE) {
+              var make = MAKE.map(function (d) {
+                return d.Count;
+              });
+              make = make.slice(1, -1);
+              document.getElementById("make").innerHTML = make;
+            }
 
-          d3.csv(
-            "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=741328053&single=true&output=csv"
-          ).then(makeop);
-          function makeop(OP) {
-            var op = OP.map(function (d) {
-              return d.Count;
-            });
-            op = op.slice(2);
-            document.getElementById("oput").innerHTML = op;
-          }
+            d3.csv(
+              "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=741328053&single=true&output=csv"
+            ).then(makeop);
+            function makeop(OP) {
+              var op = OP.map(function (d) {
+                return d.Count;
+              });
+              op = op.slice(2);
+              document.getElementById("oput").innerHTML = op;
+            }
 
-          d3.csv(
-            "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=741328053&single=true&output=csv"
-          ).then(makeChart);
-          function makeChart(Sum) {
-            var status = Sum.map(function (d) {
-              return d.Status;
-            });
-            var count = Sum.map(function (d) {
-              return d.Count;
-            });
-            var ctx = document.getElementById("StatusChart").getContext("2d");
-            ctx.height = 100;
-            var StatusChart = new Chart(ctx, {
-              type: "doughnut",
-              data: {
-                labels: status,
-                datasets: [
-                  {
-                    data: count,
-                    backgroundColor: [
-                      "rgba(3, 252, 128, 0.25)",
-                      "rgba(252, 186, 3, 0.25)",
-                      "rgba(204, 0, 0, 0.25)",
-                    ],
-                    borderColor: [
-                      "rgba(3, 252, 128, 1)",
-                      "rgba(252, 186, 3, 1)",
-                      "rgba(204, 0, 0, 1)",
-                    ],
-                    borderWidth: 2,
-                  },
-                ],
-              },
-              options: {
-                responsive: true,
-                maintainAspectRatio: true,
-                aspectRatio: 1.5,
-
-                animation: {
-                  duration: 0,
+            d3.csv(
+              "https://docs.google.com/spreadsheets/d/e/2PACX-1vSr8JPhbKLmrSPOJRW92ZiJsqnSjCjrJH0iNOiZjLeHdlq1x-Ws90jkvbNK9gbawwG_1DpL_3LBTJus/pub?gid=741328053&single=true&output=csv"
+            ).then(makeChart);
+            function makeChart(Sum) {
+              var status = Sum.map(function (d) {
+                return d.Status;
+              });
+              var count = Sum.map(function (d) {
+                return d.Count;
+              });
+              var ctx = document.getElementById("StatusChart").getContext("2d");
+              ctx.height = 100;
+              var StatusChart = new Chart(ctx, {
+                type: "doughnut",
+                data: {
+                  labels: status,
+                  datasets: [
+                    {
+                      data: count,
+                      backgroundColor: [
+                        "rgba(3, 252, 128, 0.25)",
+                        "rgba(252, 186, 3, 0.25)",
+                        "rgba(204, 0, 0, 0.25)",
+                      ],
+                      borderColor: [
+                        "rgba(3, 252, 128, 1)",
+                        "rgba(252, 186, 3, 1)",
+                        "rgba(204, 0, 0, 1)",
+                      ],
+                      borderWidth: 2,
+                    },
+                  ],
                 },
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: true,
+                  aspectRatio: 1.5,
 
-                legend: {
-                  position: "top",
-                  align: "start",
+                  animation: {
+                    duration: 0,
+                  },
 
-                  labels: {
-                    fontColor: "#9c9c9c",
-                    fontSize: 12,
-                    fontFamily: "'Athiti', sans-serif",
+                  legend: {
+                    position: "top",
+                    align: "start",
+
+                    labels: {
+                      fontColor: "#9c9c9c",
+                      fontSize: 12,
+                      fontFamily: "'Athiti', sans-serif",
+                    },
                   },
                 },
-              },
-            });
-          }
-        </script>
+              });
+            }
+          </script>
+        </div>
       </div>
     </div>
   </body>
