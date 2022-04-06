@@ -123,15 +123,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript">
       // Click anywhere to play the audio
-      document.addEventListener(
-        "click",
-        function () {
-          audio = document.getElementById("bgm");
-          audio.volume = 0.5;
+      audio = document.getElementById("bgm");
+      audio.volume = 0.5;
+      document.addEventListener("click", function () {
+        // Toggle play/pause
+        if (audio.paused) {
           audio.play();
-        },
-        { once: true }
-      );
+        } else {
+          audio.pause();
+        }
+      });
 
       new WOW().init();
     </script>
