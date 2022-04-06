@@ -4,5 +4,6 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/TNI-Cybersec/tni-cybersec.github.io)](https://github.com/TNI-Cybersec/tni-cybersec.github.io/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/TNI-Cybersec/tni-cybersec.github.io)](https://github.com/TNI-Cybersec/tni-cybersec.github.io/pulls)
+[![pages-build-deployment](https://github.com/TNI-Cybersec/tni-cybersec.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/TNI-Cybersec/tni-cybersec.github.io/actions/workflows/pages/pages-build-deployment)
 
 Welcome to TNI Cybersec's GitHub Pages!
