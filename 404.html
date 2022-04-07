@@ -95,12 +95,20 @@
         <div class="hero">
           <div class="header">
             <h1 class="wow fadeInUp" data-wow-delay="0.1s">
-              404 Page not found
+              <span class="rainbowText">404 Page not found</span>
             </h1>
             <h3 class="wow fadeInUp" data-wow-delay="0.2s">
-              <i class="fa-solid fa-hand-pointer"></i> Tap to <i class="fa-solid fa-play"></i> & <i class="fa-solid fa-pause"></i>
+              <i class="fa-solid fa-hand-pointer"></i> Tap to
+              <span id="control-icon"
+                ><i class="fa-solid fa-play"></i> &
+                <i class="fa-solid fa-pause"></i
+              ></span>
             </h3>
-            <h3 class="wow fadeInUp" data-wow-delay="0.3s"> <i class="fa-solid fa-music"></i> <i class="fa-solid fa-music"></i> <i class="fa-solid fa-music"></i></h3>
+            <h3 class="wow fadeInUp" data-wow-delay="0.3s">
+              <i class="fa-solid fa-music"></i>
+              <i class="fa-solid fa-music"></i>
+              <i class="fa-solid fa-music"></i>
+            </h3>
             <h6 class="wow fadeInUp" data-wow-delay="0.4s">
               Never gonna give you up
             </h6>
@@ -110,7 +118,11 @@
             <h6 class="wow fadeInUp" data-wow-delay="0.6s">
               Never gonna run around and desert you
             </h6>
-            <h3 class="wow fadeInUp" data-wow-delay="0.7s"> <i class="fa-solid fa-music"></i> <i class="fa-solid fa-music"></i> <i class="fa-solid fa-music"></i></h3>
+            <h3 class="wow fadeInUp" data-wow-delay="0.7s">
+              <i class="fa-solid fa-music"></i>
+              <i class="fa-solid fa-music"></i>
+              <i class="fa-solid fa-music"></i>
+            </h3>
             <!-- <button onclick="playAudio()">play</button> -->
           </div>
         </div>
@@ -126,14 +138,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript">
       // Click anywhere to play the audio
+      controlIcon = document.getElementById("control-icon");
       audio = document.getElementById("bgm");
       audio.volume = 0.5;
       document.addEventListener("click", function () {
         // Toggle play/pause
         if (audio.paused) {
           audio.play();
+          controlIcon.innerHTML = '<i class="fa-solid fa-pause"></i>';
         } else {
           audio.pause();
+          controlIcon.innerHTML = '<i class="fa-solid fa-play"></i>';
         }
       });
 
