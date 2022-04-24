@@ -6,10 +6,6 @@ $(document).ready(function () {
   $("#msg-plugin").load("common/messenger-plugin.html");
 });
 
-
-document.getElementById("version").innerHTML = "4.1.2";
-document.getElementById("year").innerHTML = new Date().getFullYear();
-
 // Loader starts
 
 var loader;
