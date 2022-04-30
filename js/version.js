@@ -1,2 +1,2 @@
-document.getElementById("version").innerHTML = "4.1.3";
+document.getElementById("version").innerHTML = "4.2.1";
 document.getElementById("year").innerHTML = new Date().getFullYear();
