@@ -9,8 +9,16 @@ const assets = [
   "/termsofservice.html",
   "/404.html",
   "/offline.html",
+  // common
+  "/common/navbar.html",
+  "/common/footer.html",
+  "/common/social-card.html",
+  "/common/cookie-banner.html",
+  "/common/messenger-plugin.html",
+  // css
   "/css/style.css",
   "/css/animate.min.css",
+  // js
   "/js/app.js",
   "/js/script.js",
   "/js/carousel.js",
@@ -18,6 +26,15 @@ const assets = [
   "/js/version.js",
   "/js/t.min.js",
   "/js/wow.min.js",
+  "/js/sw.js",
+  // img
+  "/img/TNICyberWeb.png",
+  "/img/TNICyberWebIcon",
+  "/img/CyberPic.jpg",
+  "/img/cybersec.jpg",
+  "/img/activity.jpg",
+  "/img/aboutme.png",
+  "/img/Head.png",
 ];
 
 self.addEventListener("install", (installEvent) => {
