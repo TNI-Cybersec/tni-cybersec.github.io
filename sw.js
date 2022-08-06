@@ -29,7 +29,7 @@ const assets = [
   "/js/sw.js",
   // img
   "/img/TNICyberWeb.png",
-  "/img/TNICyberWebIcon",
+  "/img/TNICyberWebIcon.png",
   "/img/CyberPic.jpg",
   "/img/cybersec.jpg",
   "/img/activity.jpg",
