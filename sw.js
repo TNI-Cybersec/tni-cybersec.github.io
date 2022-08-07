@@ -26,7 +26,6 @@ const assets = [
   "/js/version.js",
   "/js/t.min.js",
   "/js/wow.min.js",
-  "/js/sw.js",
   // img
   "/img/TNICyberWeb.png",
   "/img/TNICyberWebIcon.png",
