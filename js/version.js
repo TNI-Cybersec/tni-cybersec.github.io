@@ -1,3 +1,5 @@
-document.getElementById("version").innerHTML = "4.2.1";
-document.getElementById("year").innerHTML = new Date().getFullYear();
+const VERSION = "4.2.1";
+const YEAR = new Date().getFullYear();
 
+document.getElementById("version").innerHTML = VERSION;
+document.getElementById("year").innerHTML = YEAR;
