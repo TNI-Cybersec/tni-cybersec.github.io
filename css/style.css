@@ -36,10 +36,11 @@ body {
   position: fixed;
   width: 100%;
   height: 100vh;
+  transform: scale(1.5);
   z-index: 1;
   overflow: visible;
   background: rgb(0, 0, 0)
-    url("https://64.media.tumblr.com/037cef717d8faf83379d7b6a36c4ed3a/tumblr_o2rna9xKc21rv33k2o8_250.gifv")
+    url("https://raw.githubusercontent.com/n3r4zzurr0/svg-spinners/main/preview/ring-resize-white-36.svg")
     no-repeat center center;
 }
 .shadow {
@@ -658,8 +659,23 @@ nav #menu li a:hover {
   z-index: 1;
   top: 0px;
   position: fixed;
-  background: #0f0f0fe5 url("https://i.gifer.com/JVA.gif") no-repeat center
-    center;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.70),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  );
+  animation: move 60s linear infinite;
   width: 100%;
   height: 100%;
   visibility: hidden;
