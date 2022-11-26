@@ -4,8 +4,7 @@
 </br>	
 
 # TNI-Cybersec website
-## [![TNI Cybersec Page](https://img.shields.io/badge/🌐TNI%20Cybersec-↖Click!-white?style=for-the-badge)](https://tni-cybersec.github.io)
-
+## [tni-cybersec.github.io](https://tni-cybersec.github.io) *👈💻Our website*
 |Website|[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)|
 |----|----|
 

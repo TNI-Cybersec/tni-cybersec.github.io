@@ -1,7 +1,7 @@
-<nav>
+<nav class="user-select-none">
   <span
     id="brand"
-    class="circleScaleBtn2 logo wow fadeInDown"
+    class="circleScaleBtn2 logo wow fadeInDown
     data-wow-delay="0.6s"
     onclick="location.href='index.html'"
   >
@@ -13,19 +13,19 @@
     />
   </span>
 
-  <ul id="menu" class="wow fadeInDown" data-wow-delay="0.6s">
+  <ul id="menu" class="wow fadeInDown" data-wow-delay="0">
     <li>
-      <a href="cybersec.html" class="borderFade"
+      <a href="cybersec.html" class="wow fadeInDown borderFade"
         ><i class="fas fa-user-ninja"></i> Cybersec<span></span
       ></a>
     </li>
     <li>
-      <a href="activities.html" class="borderFade"
+      <a href="activities.html" class="wow fadeInDown borderFade"
         ><i class="fas fa-fire-alt"></i> Activities<span></span
       ></a>
     </li>
     <li>
-      <a href="aboutus.html" class="borderFade"
+      <a href="aboutus.html" class="wow fadeInDown borderFade"
         ><i class="fas fa-info-circle"></i> About Us<span></span
       ></a>
     </li>
@@ -41,35 +41,35 @@
   </ul>
 
   <div id="toggle">
-    <i class="fas fa-bars wow bounceIn span" data-wow-delay="0.6s"></i>
+    <i class="fas fa-bars wow bounceIn span user-select-none" data-wow-delay="0.6s"></i>
   </div>
 </nav>
 
 <div id="resize">
   <div class="close-btn">
-    <i class="far fa-times-circle wow bounceIn span" data-wow-delay="0.6s"></i>
+    <i class="far fa-times-circle wow bounceIn span user-select-none" data-wow-delay="0.6s"></i>
   </div>
 
   <ul id="menu">
     <li>
-      <a href="cybersec.html" class="borderFade"
+      <a href="cybersec.html" class="borderFade user-select-none"
         ><i class="fas fa-user-ninja"></i> Cybersec<span></span
       ></a>
     </li>
     <li>
-      <a href="activities.html" class="borderFade"
+      <a href="activities.html" class="borderFade user-select-none"
         ><i class="fas fa-fire-alt"></i> Activities<span></span
       ></a>
     </li>
     <li>
-      <a href="aboutus.html" class="borderFade"
+      <a href="aboutus.html" class="borderFade user-select-none"
         ><i class="fas fa-info-circle"></i> About Us<span></span
       ></a>
     </li>
     <li>
       <a
         href=""
-        class="borderFade rainbowText"
+        class="borderFade rainbowText user-select-none"
         data-toggle="modal"
         data-target="#social"
         ><i class="fas fa-handshake"></i> Join us!<span></span
@@ -97,4 +97,19 @@
     $(this).toggleClass("on");
     $("#resize").toggleClass("active");
   });
+  
+  TweenMax.from("#brand", 1, {
+                  delay: 0.4,
+                  y: 10,
+                  opacity: 0,
+                  ease: Expo.easeInOut
+            })
+
+            TweenMax.staggerFrom("#menu li a", 1, {
+                  delay: 0.4,
+                  opacity: 0,
+                  ease: Expo.easeInOut
+            }, 0.1);
+
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
