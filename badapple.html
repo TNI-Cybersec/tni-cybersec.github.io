@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="TNI Cybersec" content="404" />
+
+    <title>TNI Cybersec | 🍎 Bad Apple!!</title>
+    <meta name="description" content="404 Page not found" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- bootstrap cdns -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <!-- fontawesome cdns -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Athiti:100,100i,300,300i,400,400i,500,500i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Mitr:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- favicon -->
+    <link rel="icon" href="img/CyberPic.jpg" />
+    <link rel="shortcut icon" href="img/TNICyberWebIcon.ico" />
+
+    <!-- terminal effect -->
+    <script src="js/t.min.js"></script>
+
+    <!-- for on scroll animations -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <script src="js/wow.min.js"></script>
+    <style>
+      #badapple {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translateX(calc((100% - 100vw) / 2));
+      }
+
+      centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 80%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+      }
+
+      .container {
+        margin: 50px auto 40px auto;
+        text-align: center;
+      }
+
+      .shadows {
+           text-shadow: rgb(0, 0, 0) 2px 0 10px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- loader -->
+    <div id="loader"></div>
+
+   
+    <div class="wrapper">
+      <!--------------- navbar starts here --------------->
+      <nav>
+        <span
+          id="brand"
+          class="circleScaleBtn2 logo"
+          onclick="location.href='index.html'"
+        >
+          <img
+            rel="preload"
+            as="image"
+            width="auto"
+            height="55"
+            src="img/TNICyberWeb.png"
+          />
+        </span>
+      </nav>
+      <!--------------- navbar ends here --------------->
+
+      <!--------------- hero section starts here --------------->
+      <video autoplay loop id="badapple">
+        <source src="video/badapple.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="container centered">
+      <div class="wow bounceIn">
+          <h1>🍎</h1>
+          <h1 class="rainbowText"> Bad Apple!!</h1>
+          <h2 class="shadows"><i class="fa-solid fa-hand-pointer"></i> Tap to
+          <span id="control-icon" onclick="myFunction()"
+            ><i class="fa-solid fa-play"></i> &
+            <i class="fa-solid fa-pause"></i>
+          </span>
+          </h2>
+        </div>
+      </div>
+      
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+
+    <!-- greensock cdn -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> -->
+
+    <script type="text/javascript">
+      // Click anywhere to play the audio
+      controlIcon = document.getElementById("control-icon");
+      video = document.getElementById("badapple");
+      document.addEventListener("click", function () {
+        // Toggle play/pause
+        if (video.paused) {
+          video.play();
+          controlIcon.innerHTML = '<i class="fa-solid fa-pause"></i>';
+        } else {
+          video.pause();
+          controlIcon.innerHTML = '<i class="fa-solid fa-play"></i>';
+        }
+      });
+
+      new WOW().init();
+    </script>
+  </body>
+</html>
