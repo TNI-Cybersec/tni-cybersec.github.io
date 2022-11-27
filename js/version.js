@@ -1,4 +1,4 @@
-const VERSION = "5.1.1";
+const VERSION = "5.1.5";
 const YEAR = new Date().getFullYear();
 
 document.getElementById("version").innerHTML = VERSION;
