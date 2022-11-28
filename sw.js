@@ -1,4 +1,4 @@
-const CACHE_NAME = "tni-cyber-site-5.1.1";
+const CACHE_NAME = "tni-cyber-site-5.1.5";
 const OFFLINE_URL = "offline.html";
 const assets = [
   "/",
@@ -9,6 +9,7 @@ const assets = [
   "/termsofservice.html",
   "/404.html",
   "/offline.html",
+  "/badapple.html",
   // common
   "/common/navbar.html",
   "/common/footer.html",
