@@ -185,7 +185,7 @@ span.list2 {
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
-  transition: 2.5s ease-in-out;
+  transition: 3.5s ease-in-out;
   height: auto;
   width: 100%;
   border-radius: 7px;
