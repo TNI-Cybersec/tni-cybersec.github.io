@@ -89,9 +89,10 @@
       <div rel="preload" as="image" class="bgimg wow fadeInUp black">
         <div class="hero">
           <div class="header">
-            <h1 class="wow fadeInUp user-select-none" data-wow-delay="0.1s">👋Hello World!👋</h1>
+            <h1 class="wow fadeInUp user-select-none" data-wow-delay="0.1s">
+              <span id="status1"></span></h1>
             <h5 class="wow fadeInUp user-select-none" data-wow-delay="0.3s">
-              👋こんにちは世界!👋
+              <span id="status2"></span>
             </h5>
           </div>
         </div>
@@ -105,7 +106,13 @@
       <br>
 
       <h6 class="wow fadeInUp user-select-none" data-wow-delay="0.2s">
-        <i class="fas fa-user-ninja"></i> わたしはだれ？
+          <img
+            rel="preload"
+            as="image"
+            width="auto"
+            height="22"
+            src="img/TNICyberICON.png"
+          /> <span id="hero"></span>
       </h6>
 
       <div class="vertical wow fadeInUp"></div>
@@ -206,6 +213,7 @@
 
     <!-- javascript -->
     <script src="js/script.js"></script>
+    <script src="js/hero.js"></script>
     <script src="js/app.js"></script>
 
     <!-- greensock cdn -->

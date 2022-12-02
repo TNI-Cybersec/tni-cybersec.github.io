@@ -40,7 +40,7 @@ body {
   z-index: 1;
   overflow: visible;
   background: rgb(0, 0, 0)
-    url("https://raw.githubusercontent.com/n3r4zzurr0/svg-spinners/main/preview/ring-resize-white-36.svg")
+    url("../img/ring-resize-white-36.svg")
     no-repeat center center;
 }
 .shadow {
@@ -401,7 +401,7 @@ h5.footer {
 }
 
 .bgimg404 {
-  background-image: url("https://c.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif");
+  background-image: url("../img/rick-roll.gif");
   background-position: center;
   background-size: cover;
   min-height: 100%;
