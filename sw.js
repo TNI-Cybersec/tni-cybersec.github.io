@@ -1,4 +1,4 @@
-const CACHE_NAME = "tni-cyber-site-5.1.5";
+const CACHE_NAME = "tni-cyber-site-5.5.5";
 const OFFLINE_URL = "offline.html";
 const assets = [
   "/",
@@ -47,6 +47,7 @@ const assets = [
   "/img/Takahashi.png",
   "/img/finsec.jpg",
   "/img/Cisco-Innovation-Challenge-2019.jpg",
+  "/img/RTAFCyberOps.png",
   "/img/tni.jpg",
   "/img/rick-roll.gif",
   "/img/ring-resize-white-36.svg",

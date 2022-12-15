@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#000000" />
-    <meta name="TNI Cybersec" content="🍎 Bad Apple!!" />
+    <meta name="TNI Cybersec" content="🎉 Happy New Year!!!" />
 
-    <title>TNI Cybersec | 🍎 Bad Apple!!</title>
-    <meta name="description" content="🍎 Bad Apple!!" />
+    <title>TNI Cybersec | 🎉 Happy New Year!!!</title>
+    <meta name="description" content="🎉 Happy New Year!!!" />
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
@@ -48,12 +48,12 @@
     <link rel="stylesheet" href="css/animate.min.css" />
     <script src="js/wow.min.js"></script>
     <style>
-      #badapple {
+      #ChristmasEve {
         position: fixed;
         right: 0;
         bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
+        min-width: 50%;
+        min-height: 50%;
         transform: translateX(calc((100% - 100vw) / 2));
       }
 
@@ -74,14 +74,20 @@
       .shadows {
            text-shadow: rgb(0, 0, 0) 2px 0 10px;
       }
+      .hpny {
+        background-image: url("https://i.pinimg.com/originals/d4/e4/2f/d4e42f1b817a4a4fae7417155103b1f1.gif");
+        background-position: center;
+        background-size: cover;
+        min-height: 100%;
+      }
 
+      
     </style>
   </head>
 
   <body>
     <!-- loader -->
     <div id="loader"></div>
-
    
     <div class="wrapper">
       <!--------------- navbar starts here --------------->
@@ -103,47 +109,77 @@
       <!--------------- navbar ends here --------------->
       <div class="snowflakes" aria-hidden="true">
         <div class="snowflake">
-          🍎
+            ❅
         </div>
         <div class="snowflake">
-          🍏
+            ❆
         </div>
         <div class="snowflake">
-          🍎
+            ❅
         </div>
         <div class="snowflake">
-          🍏
+            ❆
         </div>
         <div class="snowflake">
-          🍎
+            ❅
         </div>
         <div class="snowflake">
-          🍏
+            ❆
         </div>
         <div class="snowflake">
-          🍎
+            ❅
         </div>
         <div class="snowflake">
-          🍏
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
         </div>
       </div>
       <!--------------- hero section starts here --------------->
-      <video autoplay loop id="badapple">
-        <source src="video/badapple.mp4" type="video/mp4">
+      <audio autoplay loop id="ChristmasEve">
+        <source src="video/ChristmasEve.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
-      </video>
-      <div class="container centered user-select-none">
-      <div class="wow bounceIn">
-          <h1>🍎</h1>
-          <h1 class="rainbowText"> Bad Apple!!</h1>
-          <h2 class="shadows"><i class="fa-solid fa-hand-pointer"></i> Tap to
-          <span id="control-icon" onclick="myFunction()"
-            ><i class="fa-solid fa-play"></i> &
-            <i class="fa-solid fa-pause"></i>
-          </span>
-          </h2>
+      </audio>
+
+      <div rel="preload" as="image" class="hpny wow bounceIn">
+        <div class="hero user-select-none">
+          <div class="header">
+              <div class="wow bounceIn">
+                <h1>🎉🎄🎆🎄🎉</h1>
+                <h1 class="rainbowText">Happy New Year</h1>
+                <h1 class="rainbowText">＼\ <span id="hpny"></span> /／</h1>
+                <h3 class="wow fadeInUp" data-wow-delay="0.2s">
+                  <i class="fa-solid fa-hand-pointer"></i> Tap to
+                  <span id="control-icon"
+                    ><i class="fa-solid fa-play"></i> &
+                    <i class="fa-solid fa-pause"></i
+                  ></span>
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
       
     <!-- jQuery -->
     <script
@@ -160,14 +196,19 @@
 
     <!-- javascript -->
     <script src="js/script.js"></script>
+    <script src="js/hero.js"></script>
 
     <!-- greensock cdn -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> -->
 
     <script type="text/javascript">
+      // Year
+      var YEAR = new Date().getFullYear();
+      var HPNY = YEAR + 1;
+      document.getElementById("hpny").textContent = HPNY;
       // Click anywhere to play the audio
       controlIcon = document.getElementById("control-icon");
-      video = document.getElementById("badapple");
+      video = document.getElementById("ChristmasEve");
       document.addEventListener("click", function () {
         // Toggle play/pause
         if (video.paused) {
