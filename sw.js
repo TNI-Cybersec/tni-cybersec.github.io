@@ -35,6 +35,7 @@ const assets = [
   "/img/TNICyberWebIcon.png",
   "/img/logoTNIWhite.png",
   "/img/TNIIcon.png",
+  "/img/Open-source.png",
   "/img/CTFTIME.png",
   "/img/Coop Cop.png",
   "/img/Coop Cop.png2",
