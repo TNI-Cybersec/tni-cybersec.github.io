@@ -150,12 +150,12 @@
             type="button"
             class="col-lg-12 type type1 border border-light wow fadeInUp circleScaleBtn"
             data-wow-delay="0.2s"
-            onclick="$('#ioTable').modal('hide');$('#social').modal();$('#social').css('overflow-y','auto')"
+            onclick="$('#ioTable').modal('hide');$('#forms').modal();$('#forms').css('overflow-y','auto')"
           >
             <div class="hero">
               <div class="centered" type="button">
                 <h1 class="wow fadeInUp user-select-none" data-wow-delay="0.1s">
-                  <i class="fas fa-user-ninja"></i><br>Join Us!
+                  <i class="fas fa-user-ninja"></i><br>Register
                 </h1>
               </div>
             </div>
@@ -173,12 +173,12 @@
             type="button"
             class="col-lg-12 type type2 border border-light wow fadeInUp circleScaleBtn"
             data-wow-delay="0.2s"
-            onclick="location.href='activities.html'"
+            onclick="$('#ioTable').modal('hide');$('#social').modal();$('#social').css('overflow-y','auto')"
           >
             <div class="hero">
               <div class="centered" type="button">
                 <h1 class="wow fadeInUp user-select-none" data-wow-delay="0.1s">
-                  <i class="fas fa-fire-alt"></i><br>Activities
+                  <i class="fa-solid fa-comments"></i><br>Contact
                 </h1>
               </div>
             </div>
@@ -210,6 +210,37 @@
       </div>
     </div>
     <!--------------- projects section ends here --------------->
+    
+    <div
+    id="forms"
+    class="modal fade"
+    role="dialog"
+    data-backdrop="static"
+  >
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content ripple1">
+        <div class="modal-header">
+          <h4 class="modal-title rainbowText user-select-none">
+            <i class="fas fa-handshake"></i> Register Forms!
+          </h4>
+        </div>
+       
+          <iframe width="2000px" height="650px" src="https://forms.office.com/r/dN6tpFgfbz?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+  
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-outline-light btn-danger btn-lg btn-block fadeInUp"
+            data-toggle="modal"
+            data-dismiss="modal"
+          >
+            <i class="far fa-times-circle"></i> Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
     <!--------------- footer starts here --------------->
     <div id="footer"></div>
