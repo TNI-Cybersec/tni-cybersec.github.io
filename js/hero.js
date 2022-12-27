@@ -1,5 +1,5 @@
 //Wellcome Screen
-var status1 = "🎄HPNY 2023!🎄";
+var status1 = "🎄HPNY 2023!🎄"; 
 document.getElementById("status1").textContent = status1;
 var status2 = "🎄幸福な新年 2023!🎄";
 document.getElementById("status2").textContent = status2;
