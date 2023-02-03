@@ -1,7 +1,7 @@
 // Wellcome Screen
-var status1 = "🎄HPNY 2023!🎄";
+var status1 = "👋ようこそ!👋";
 document.getElementById("status1").textContent = status1;
-var status2 = "🎉幸福な新年 2023!🎉";
+var status2 = "🌏Hello World!🌏";
 document.getElementById("status2").textContent = status2;
 // Below Wellcome Screen
 var words = ["共に未来を前進させる", "クリエイティブは世界を作る", "未来は作れる", "すべての考えは常に重要です", "未来はここにある"];
