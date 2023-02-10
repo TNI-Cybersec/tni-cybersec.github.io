@@ -5,6 +5,6 @@ function scroll() {
       carousel.style.transform = `translateX(${x}%)`;
       x -= 100;
       if (x == -400) {
-       x = 0;
+            x = 0;
       }
 }

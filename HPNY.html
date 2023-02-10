@@ -1,195 +1,170 @@
 <!DOCTYPE html>
 <html lang="th">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="TNI Cybersec" content="🎉 Happy New Year!!!" />
 
-    <title>TNI Cybersec | 🎉 Happy New Year!!!</title>
-    <meta name="description" content="🎉 Happy New Year!!!" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="TNI Cybersec" content="🎉 Happy New Year!!!" />
 
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="css/style.css" />
+  <title>TNI Cybersec | 🎉 Happy New Year!!!</title>
+  <meta name="description" content="🎉 Happy New Year!!!" />
 
-    <!-- bootstrap cdns -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
 
-    <!-- fontawesome cdns -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
-    />
+  <!-- bootstrap cdns -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
 
-    <!-- google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Athiti:100,100i,300,300i,400,400i,500,500i,700,700i"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Mitr:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
+  <!-- fontawesome cdns -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
 
-    <!-- favicon -->
-    <link rel="icon" href="img/CyberPic.jpg" />
-    <link rel="shortcut icon" href="img/TNICyberWebIcon.ico" />
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Athiti:100,100i,300,300i,400,400i,500,500i,700,700i"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Mitr:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
 
-    <!-- terminal effect -->
-    <script src="js/t.min.js"></script>
+  <!-- favicon -->
+  <link rel="icon" href="img/CyberPic.jpg" />
+  <link rel="shortcut icon" href="img/TNICyberWebIcon.ico" />
 
-    <!-- for on scroll animations -->
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <script src="js/wow.min.js"></script>
-    <style>
-      #ChristmasEve {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 50%;
-        min-height: 50%;
-        transform: translateX(calc((100% - 100vw) / 2));
-      }
+  <!-- terminal effect -->
+  <script src="js/t.min.js"></script>
 
-      centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 80%;
-        /* bring your own prefixes */
-        transform: translate(-50%, -50%);
-      }
+  <!-- for on scroll animations -->
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <script src="js/wow.min.js"></script>
+  <style>
+    #ChristmasEve {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 50%;
+      min-height: 50%;
+      transform: translateX(calc((100% - 100vw) / 2));
+    }
 
-      .container {
-        margin: 50px auto 40px auto;
-        text-align: center;
-      }
+    centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 80%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+    }
 
-      .shadows {
-        text-shadow: rgb(0, 0, 0) 2px 0 10px;
-      }
+    .container {
+      margin: 50px auto 40px auto;
+      text-align: center;
+    }
 
-      .hpny {
-        background-image: url("https://i.pinimg.com/originals/d4/e4/2f/d4e42f1b817a4a4fae7417155103b1f1.gif");
-        background-position: center;
-        background-size: cover;
-        min-height: 100%;
-      }
-    </style>
-  </head>
+    .shadows {
+      text-shadow: rgb(0, 0, 0) 2px 0 10px;
+    }
 
-  <body>
-    <!-- loader -->
-    <div id="loader"></div>
+    .hpny {
+      background-image: url("https://i.pinimg.com/originals/d4/e4/2f/d4e42f1b817a4a4fae7417155103b1f1.gif");
+      background-position: center;
+      background-size: cover;
+      min-height: 100%;
+    }
+  </style>
+</head>
 
-    <div class="wrapper">
-      <!--------------- navbar starts here --------------->
-      <nav>
-        <span
-          id="brand"
-          class="circleScaleBtn2 logo user-select-none wow bounceIn"
-          data-wow-delay="0.6s"
-          onclick="location.href='index.html'"
-        >
-          <img
-            rel="preload"
-            as="image"
-            width="auto"
-            height="55"
-            src="img/TNICyberWeb.png"
-          />
-        </span>
-      </nav>
-      <!--------------- navbar ends here --------------->
-      <div class="snowflakes" aria-hidden="true">
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-      </div>
-      <!--------------- hero section starts here --------------->
-      <audio autoplay loop id="ChristmasEve">
-        <source src="video/ChristmasEve.mp4" type="video/mp4" />
-        Your browser does not support HTML5 video.
-      </audio>
+<body>
+  <!-- loader -->
+  <div id="loader"></div>
 
-      <div rel="preload" as="image" class="hpny wow bounceIn">
-        <div class="hero user-select-none">
-          <div class="header">
-            <div class="wow bounceIn">
-              <h1>🎉🎄🎆🎄🎉</h1>
-              <h1 class="rainbowText">Happy New Year</h1>
-              <h1 class="rainbowText">＼\ <span id="hpny"></span> /／</h1>
-              <h3 class="wow bounceIn" data-wow-delay="0.2s">
-                <i class="fa-solid fa-hand-pointer"></i> Tap to
-                <span id="control-icon"
-                  ><i class="fa-solid fa-play"></i> &
-                  <i class="fa-solid fa-pause"></i
-                ></span>
-              </h3>
-            </div>
+  <div class="wrapper">
+    <!--------------- navbar starts here --------------->
+    <nav>
+      <span id="brand" class="circleScaleBtn2 logo user-select-none wow bounceIn" data-wow-delay="0.6s"
+        onclick="location.href='index.html'">
+        <img rel="preload" as="image" width="auto" height="55" src="img/TNICyberWeb.png" />
+      </span>
+    </nav>
+    <!--------------- navbar ends here --------------->
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+    </div>
+    <!--------------- hero section starts here --------------->
+    <audio autoplay loop id="ChristmasEve">
+      <source src="video/ChristmasEve.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </audio>
+
+    <div rel="preload" as="image" class="hpny wow bounceIn">
+      <div class="hero user-select-none">
+        <div class="header">
+          <div class="wow bounceIn">
+            <h1>🎉🎄🎆🎄🎉</h1>
+            <h1 class="rainbowText">Happy New Year</h1>
+            <h1 class="rainbowText">＼\ <span id="hpny"></span> /／</h1>
+            <h3 class="wow bounceIn" data-wow-delay="0.2s">
+              <i class="fa-solid fa-hand-pointer"></i> Tap to
+              <span id="control-icon"><i class="fa-solid fa-play"></i> &
+                <i class="fa-solid fa-pause"></i></span>
+            </h3>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- jQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"
-    ></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
 
-    <!-- javascript -->
-    <script src="js/script.js"></script>
-    <script src="js/hero.js"></script>
+  <!-- javascript -->
+  <script src="js/script.js"></script>
+  <script src="js/hero.js"></script>
 
-    <!-- greensock cdn -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> -->
+  <!-- greensock cdn -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> -->
 
-    <script type="text/javascript">
-      // Year
-      var YEAR = new Date().getFullYear();
-      var HPNY = YEAR + 1;
-      document.getElementById("hpny").textContent = HPNY;
-      // Click anywhere to play the audio
-      controlIcon = document.getElementById("control-icon");
-      video = document.getElementById("ChristmasEve");
-      document.addEventListener("click", function () {
-        // Toggle play/pause
-        if (video.paused) {
-          video.play();
-          controlIcon.innerHTML = '<i class="fa-solid fa-pause"></i>';
-        } else {
-          video.pause();
-          controlIcon.innerHTML = '<i class="fa-solid fa-play"></i>';
-        }
-      });
+  <script type="text/javascript">
+    // Year
+    var YEAR = new Date().getFullYear();
+    var HPNY = YEAR + 1;
+    document.getElementById("hpny").textContent = HPNY;
+    // Click anywhere to play the audio
+    controlIcon = document.getElementById("control-icon");
+    video = document.getElementById("ChristmasEve");
+    document.addEventListener("click", function () {
+      // Toggle play/pause
+      if (video.paused) {
+        video.play();
+        controlIcon.innerHTML = '<i class="fa-solid fa-pause"></i>';
+      } else {
+        video.pause();
+        controlIcon.innerHTML = '<i class="fa-solid fa-play"></i>';
+      }
+    });
 
-      new WOW().init();
-    </script>
-  </body>
+    new WOW().init();
+  </script>
+</body>
+
 </html>
