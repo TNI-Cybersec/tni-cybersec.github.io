@@ -5,6 +5,7 @@
   "background_color": "#000",
   "display": "standalone",
   "orientation": "portrait-primary",
+  "description": "We study & cyber research to watch out for new threats and expand on new knowledge in the cybersec.",
   "scope": "/",
   "start_url": "/",
   "icons": [
