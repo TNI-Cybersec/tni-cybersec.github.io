@@ -434,7 +434,8 @@
           }
 
           d3.csv(
-            "https://docs.google.com/spreadsheets/d/e/2PACX-1vR2F-7EB0fJuUD_PXbq9WUkWSmaChbKxvDkCvYjMPN8K_k1OJjEYOA5EB_JWylmmg/pub?gid=1626715208&single=true&output=csv
+            "https://docs.google.com/spreadsheets/d/e/2PACX-1vR2F-7EB0fJuUD_PXbq9WUkWSmaChbKxvDkCvYjMPN8K_k1OJjEYOA5EB_JWylmmg/pub?gid=1626715208&single=true&output=csv"
+          ).then(makeChart);
           function makeChart(Sum) {
             var status = Sum.map(function (d) {
               return d.Status;
